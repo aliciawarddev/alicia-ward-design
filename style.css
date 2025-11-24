@@ -139,3 +139,20 @@ footer a {
 footer a:hover {
     color: var(--color-accent);
 }
+
+/* CONTACT */
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
