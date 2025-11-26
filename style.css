@@ -1,10 +1,17 @@
 /* COLOR VARIABLES */
 :root {
-    --color-primary: #000000;
-    --color-background: #ffffff;
-    --color-accent: #008080;
-    --color-text: #333333;
-    --color-light-gray: #f5f5f5;
+  /* Neutrals - Light to Dark */
+  --color-ivory: #FFFEF9;
+  --color-beige: #E8E3D5;
+  --color-sand: #C9BDA8;
+  --color-gray: #8B8578;
+  --color-brown: #4A423A;
+  --color-black: #1A1612;
+  
+  /* Accent Colors */
+  --color-teal: #2AB5B5;
+  --color-teal-dark: #1E7A8C;
+  --color-teal-muted: #5A9A9A;
 }
 
 /* RESET & BASE STYLES*/
@@ -15,7 +22,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--color-text);
     background-color: var(--color-background);
     line-height: 1.6;
