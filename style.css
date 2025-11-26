@@ -316,6 +316,100 @@ a {
 }
 
 /* ================================
+   ABOUT
+   ================================ */
+
+/* Intro*/
+.about-intro {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.about-image img {
+    width: 100%;
+    display: block;
+}
+
+.about-intro-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+}
+
+.about-intro-text .lead {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+}
+
+/* About Cards */
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.about-card {
+    padding: 1.5rem;
+    border-left: 3px solid var(--color-teal);
+    background-color: var(--color-beige);
+}
+
+.about-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-brown);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.about-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--color-gray);
+    margin-bottom: 0.75rem;
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Bottom CTA */
+.about-cta {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--color-black);
+    color: var(--color-ivory);
+}
+
+.about-cta h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.about-cta p {
+    color: var(--color-beige);
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+}
+
+.about-cta .cta-button {
+    background-color: var(--color-teal);
+}
+
+.about-cta .cta-button:hover {
+    background-color: var(--color-teal-dark);
+}
+
+/* ================================
    FOOTER
    ================================ */
 footer {
