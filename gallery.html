@@ -21,82 +21,68 @@
     </header>
 
     <main>
-        <section>
-            <h2>Original Paintings</h2>
-            <p>Hand-painted acrylic artwork on canvas, varnished for a glossy finish and protection. All paintings are unframed and ready to hang.</p>
-            <p>Interested in a custom commission? <a href="contact.html">Contact me</a> to discuss your vision.</p>
-            <p>For shipping information, please see the <a href="policies.html">policies page</a>.</p>
-            
-            <div class="filter-section">
-                <label for="size-filter">Filter by size:</label>
-                <select id="size-filter">
-                    <option value="all">All Sizes</option>
-                    <option value="8x10">8" × 10" (20 × 25 cm)</option>
-                    <option value="11x14">11" × 14" (28 × 36 cm)</option>
-                    <option value="16x20">16" × 20" (41 × 51 cm)</option>
-                </select>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-description">
+                <p>Hand-painted acrylic artwork on canvas, varnished for a glossy finish and protection. All paintings are unframed and ready to hang.</p>
+                <p>Interested in a custom commission? <a href="contact.html">Contact me</a> to discuss your vision.</p>
+                <p>For shipping information, please see the <a href="policies.html">policies page</a>.</p>
             </div>
             
-            <div id="gallery-grid">
-                <article data-size="16x20">
-                    <a href="painting1.jpg" target="_blank">
-                        <img src="painting1.jpg" alt="Acrylic painting title 1">
-                    </a>
-                    <h3>Painting Title 1</h3>
-                    <p><strong>$150</strong> | Available</p>
-                    <p>Acrylic on canvas | 16" × 20" (41 × 51 cm) | 2024</p>
-                    <p>A vibrant exploration of color and movement, featuring bold brushstrokes and intricate details created with acrylic markers. The interplay of warm and cool tones creates a dynamic visual rhythm.</p>
-                </article>
-                
-                <article data-size="16x20">
-                    <a href="painting2.jpg" target="_blank">
-                        <img src="painting2.jpg" alt="Acrylic painting title 2">
-                    </a>
-                    <h3>Painting Title 2</h3>
-                    <p><strong>$150</strong> | Available</p>
-                    <p>Acrylic on canvas | 16" × 20" (41 × 51 cm) | 2024</p>
-                    <p>This piece captures the essence of natural landscapes through abstract forms. Layered textures and delicate line work invite the viewer to discover new details with each viewing.</p>
-                </article>
-                
-                <article data-size="16x20">
-                    <a href="painting3.jpg" target="_blank">
-                        <img src="painting3.jpg" alt="Acrylic painting title 3">
-                    </a>
-                    <h3>Painting Title 3</h3>
-                    <p><strong>$150</strong> | Sold</p>
-                    <p>Acrylic on canvas | 16" × 20" (41 × 51 cm) | 2024</p>
-                    <p>A study in contrast and balance, combining fluid acrylic washes with precise marker details. The composition draws the eye through sweeping gestures and thoughtful color placement.</p>
-                </article>
-                
-                <article data-size="8x10">
-                    <a href="painting4.jpg" target="_blank">
-                        <img src="painting4.jpg" alt="Acrylic painting title 4">
-                    </a>
-                    <h3>Painting Title 4</h3>
-                    <p><strong>$150</strong> | Available</p>
-                    <p>Acrylic on canvas | 8" × 10" (20 × 25 cm) | 2025</p>
-                    <p>Inspired by organic patterns found in nature, this painting features intricate layering and a rich color palette. The varnished finish enhances depth and protects the delicate details.</p>
-                </article>
-                
-                <article data-size="11x14">
-                    <a href="painting5.jpg" target="_blank">
-                        <img src="painting5.jpg" alt="Acrylic painting title 5">
-                    </a>
-                    <h3>Painting Title 5</h3>
-                    <p><strong>$150</strong> | Available</p>
-                    <p>Acrylic on canvas | 11" × 14" (28 × 36 cm) | 2025</p>
-                    <p>A harmonious blend of gestural painting and precise linework, creating a sense of movement and energy. The carefully chosen color scheme evokes emotion while maintaining visual balance.</p>
-                </article>
-                
-                <article data-size="16x20">
-                    <a href="painting6.jpg" target="_blank">
-                        <img src="painting6.jpg" alt="Acrylic painting title 6">
-                    </a>
-                    <h3>Painting Title 6</h3>
-                    <p><strong>$150</strong> | Available</p>
-                    <p>Acrylic on canvas | 16" × 20" (41 × 51 cm) | 2025</p>
-                    <p>This piece showcases the versatility of acrylic paint combined with marker details. Textured surfaces and smooth gradients work together to create visual interest and depth throughout the composition.</p>
-                </article>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/placeholder-painting.png" alt="Geometric tessellation in teal and black">
+                    <div class="gallery-info">
+                        <h3>Tessellation Study I</h3>
+                        <p>8" × 10" · Acrylic on canvas</p>
+                        <p class="price">$120</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/placeholder-painting.png" alt="Art deco geometric pattern">
+                    <div class="gallery-info">
+                        <h3>Deco Lines</h3>
+                        <p>11" × 14" · Acrylic on canvas</p>
+                        <p class="price">$180</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/placeholder-painting.png" alt="Botanical study with detailed line work">
+                    <div class="gallery-info">
+                        <h3>Botanical Detail</h3>
+                        <p>16" × 20" · Acrylic on canvas</p>
+                        <p class="price">$280</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/placeholder-painting.png" alt="Hexagonal tessellation pattern">
+                    <div class="gallery-info">
+                        <h3>Hexagon Flow</h3>
+                        <p>8" × 10" · Acrylic on canvas</p>
+                        <p class="price">$120</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/placeholder-painting.png" alt="Geometric sunburst design">
+                    <div class="gallery-info">
+                        <h3>Sunburst</h3>
+                        <p>11" × 14" · Acrylic on canvas</p>
+                        <p class="price">$180</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/placeholder-painting.png" alt="Interlocking diamond pattern">
+                    <div class="gallery-info">
+                        <h3>Diamond Grid</h3>
+                        <p>8" × 10" · Acrylic on canvas</p>
+                        <p class="price sold">Sold</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
