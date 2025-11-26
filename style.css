@@ -343,6 +343,11 @@ a {
     margin-bottom: 3rem;
 }
 
+.about-intro .page-header {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
 .about-intro-content {
     padding-top: 0.5rem;
 }
