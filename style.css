@@ -103,6 +103,24 @@ a {
 }
 
 /* ================================
+   TYPOGRAPHY
+   ================================ */
+
+.lead {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7;
+    color: var(--color-gray);
+}
+
+.body-text {
+    font-size: 0.95rem;
+    font-weight: 450;
+    line-height: 1.7;
+    color: var(--color-brown);
+}
+
+/* ================================
    PAGE HEADER
    ================================ */
 .page-header {
@@ -117,8 +135,6 @@ a {
 }
 
 .page-header .lead {
-    font-size: 1.1rem;
-    color: var(--color-gray);
     max-width: 550px;
 }
 
@@ -571,8 +587,9 @@ a {
 
 .policy-body p {
     font-size: 0.95rem;
+    font-weight: 450;
     line-height: 1.7;
-    color: var(--color-gray);
+    color: var(--color-brown);
     margin-bottom: 0.75rem;
 }
 
