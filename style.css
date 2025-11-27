@@ -50,7 +50,7 @@ nav {
 
 nav h1 {
     color: var(--color-ivory);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -63,7 +63,6 @@ nav ul {
 nav a {
     color: var(--color-beige);
     text-decoration: none;
-    font-size: 0.9rem;
 }
 
 nav a:hover {
@@ -74,7 +73,7 @@ nav a:hover {
    MAIN
    ================================ */
 main {
-    max-width: 80rem;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -610,9 +609,14 @@ footer {
     color: var(--color-beige);
     padding: 1.5rem 2rem;
     margin-top: 3rem;
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 footer ul {
