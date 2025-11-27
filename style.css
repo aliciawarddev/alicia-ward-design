@@ -373,6 +373,8 @@ a {
 .about-image img {
     width: 100%;
     display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .about-intro-text .lead {
@@ -394,6 +396,7 @@ a {
     padding: 1.5rem;
     background-color: var(--color-beige);
     border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .about-card h3 {
@@ -421,6 +424,7 @@ a {
     padding: 1.5rem;
     background-color: var(--color-gray);
     border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .about-cta h3 {
