@@ -346,6 +346,30 @@ a {
     font-style: italic;
 }
 
+/* Gallery CTA*/
+.gallery-cta {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-beige);
+    text-align: center;
+}
+
+.gallery-cta p {
+    font-size: 0.95rem;
+    color: var(--color-gray);
+    margin-bottom: 0;
+}
+
+.gallery-cta a {
+    color: var(--color-teal-dark);
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.gallery-cta a:hover {
+    color: var(--color-teal);
+}
+
 /* ================================
    ABOUT
    ================================ */
