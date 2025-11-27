@@ -259,7 +259,6 @@ a {
 
 /* Gallery description*/
 .gallery-description {
-    border-left: 3px solid var(--color-teal);
     padding: 1rem 1.5rem;
     margin-bottom: 2.5rem;
     max-width: 550px;
@@ -393,7 +392,6 @@ a {
 
 .about-card {
     padding: 1.5rem;
-    border-left: 3px solid var(--color-teal);
     background-color: var(--color-beige);
     border-radius: 4px;
 }
@@ -519,7 +517,6 @@ a {
 
 .contact-card {
     padding: 1.25rem;
-    border-left: 3px solid var(--color-teal);
 }
 
 .contact-card h3 {
