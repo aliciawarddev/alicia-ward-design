@@ -3,7 +3,7 @@
    ================================ */
 
    /* Reusable UI patterns extracted for consistency across pages and faster development on future projects
-   Requires: components.css
+   Requires: CSS custom variables
    
    Contents:
    1. Typography
@@ -14,6 +14,24 @@
    6. Section Dividers
    7. Image Thumbnail
    */
+
+/* ================================
+   COLOR VARIABLES
+   ================================ */
+:root {
+  /* Neutrals - Light to Dark */
+  --color-ivory: #FFFEF9;
+  --color-beige: #E8E3D5;
+  --color-sand: #C9BDA8;
+  --color-gray: #8B8578;
+  --color-brown: #4A423A;
+  --color-black: #1A1612;
+  
+  /* Accent Colors */
+  --color-teal: #2AB5B5;
+  --color-teal-dark: #1E7A8C;
+  --color-teal-muted: #5A9A9A;
+}
 
 /* ================================
    1. TYPOGRAPHY
