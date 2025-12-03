@@ -106,12 +106,14 @@ a {
    TYPOGRAPHY
    ================================ */
 
+/* 
 .lead {
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.7;
     color: var(--color-gray);
 }
+*/ 
 
 .body-text {
     font-size: 0.95rem;
@@ -123,6 +125,7 @@ a {
 /* ================================
    PAGE HEADER
    ================================ */
+/* 
 .page-header {
     margin-bottom: 2.5rem;
 }
@@ -137,6 +140,7 @@ a {
 .page-header .lead {
     max-width: 550px;
 }
+*/ 
 
 /* ================================
    HERO SECTION (Homepage)
@@ -381,10 +385,12 @@ a {
     margin-bottom: 3rem;
 }
 
+/* 
 .about-intro .page-header {
     text-align: left;
     margin-bottom: 1.5rem;
 }
+*/ 
 
 .about-intro-content {
     padding-top: 0.5rem;

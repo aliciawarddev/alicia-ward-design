@@ -54,13 +54,6 @@
    1. TYPOGRAPHY
    ================================ */
 
-    .lead {
-        font-size: 1.1rem;
-        font-weight: 500;
-        line-height: 1.7;
-        color: var(--color-grey-500);
-    }
-
     .body-text {
         font-size: 0.95rem;
         font-weight: 450;
@@ -229,6 +222,7 @@
    5. PAGE HEADER
    ================================ */
 
+   /* 
     .page-header {
         margin-bottom: 2.5rem;
     }
@@ -243,6 +237,29 @@
     .page-header .lead {
         max-width: 550px;
     }
+        */ 
+
+.page-header {
+    margin-bottom: 2.5rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-grey-900);
+    margin-bottom: 1rem;
+    display: inline-block;
+    border-bottom: 3px solid var(--color-rose-500);
+    padding-bottom: 0.5rem;
+}
+
+.lead {
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.7;
+    color: var(--color-grey-500);
+    max-width: 550px;
+}
 
 /* ================================
    6. SECTION DIVIDERS
