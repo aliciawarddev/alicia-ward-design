@@ -19,7 +19,24 @@
    COLOR VARIABLES
    ================================ */
 :root {
-  /* Neutrals - Light to Dark */
+    /* Neutrals*/
+    --color-white: #FAFAF8;
+    --color-grey-100: #E2DFDA;
+    --color-grey-300: #9C9891;
+    --color-grey-500: #7A7671;
+    --color-grey-700: #5C5955;
+    --color-grey-800: #4A4845;
+    --color-grey-900: #2E2C2A;
+
+
+    /* Dusty Rose Accents */
+    --color-rose-100: #E8D4D2;
+    --color-rose-500: #C9A9A6;
+    --color-rose-700: #A07875;
+}
+
+/* Archived - Previous color palette 
+:root {
   --color-ivory: #FFFEF9;
   --color-beige: #E8E3D5;
   --color-sand: #C9BDA8;
@@ -27,11 +44,11 @@
   --color-brown: #4A423A;
   --color-black: #1A1612;
   
-  /* Accent Colors */
   --color-teal: #2AB5B5;
   --color-teal-dark: #1E7A8C;
   --color-teal-muted: #5A9A9A;
 }
+*/
 
 /* ================================
    1. TYPOGRAPHY
@@ -41,20 +58,20 @@
         font-size: 1.1rem;
         font-weight: 500;
         line-height: 1.7;
-        color: var(--color-gray);
+        color: var(--color-grey-500);
     }
 
     .body-text {
         font-size: 0.95rem;
         font-weight: 450;
         line-height: 1.7;
-        color: var(--color-brown);
+        color: var(--color-grey-800);
     }
 
     .section-label {
         font-size: 0.9rem;
         font-weight: 600;
-        color: var(--color-brown);
+        color: var(--color-grey-700);
         text-transform: uppercase;
         letter-spacing: 0.05em;
     }
@@ -78,30 +95,30 @@
     }
 
     .btn-primary {
-        background-color: var(--color-teal-dark);
+        background-color: var(--color-rose-700);
         color: var(--color-ivory);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
     .btn-primary:hover {
-        background-color: var(--color-teal);
+        background-color: var(--color-rose-500);
     }
 
     .btn-secondary {
         background-color: transparent;
-        border: 2px solid var(--color-teal-dark);
-        color: var(--color-teal-dark);
+        border: 2px solid var(--color-rose-700);
+        color: var(--color-rose-700);
     }
 
     .btn-secondary:hover {
-        background-color: var(--color-teal-dark);
-        color: var(--color-ivory);
+        background-color: var(--color-rose-700);
+        color: var(--color-white);
     }
 
     /* Text Link */
     .text-link {
         display: inline-block;
-        color: var(--color-teal-dark);
+        color: var(--color-rose-700);
         font-weight: 600;
         font-size: 0.95rem;
         text-decoration: none;
@@ -109,7 +126,7 @@
     }
 
     .text-link:hover {
-        color: var(--color-teal);
+        color: var(--color-rose-500);
     }
 
 /* ================================
@@ -119,7 +136,7 @@
    /* Standard Card - beige background */
     .card {
         padding: 2rem;
-        background-color: var(--color-beige);
+        background-color: var(--color-grey-100);
         border-radius: 4px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
@@ -127,7 +144,7 @@
     .card-title {
         font-size: 1.25rem;
         font-weight: 600;
-        color: var(--color-teal-dark);
+        color: var(--color-rose-700);
         margin-bottom: 0.75rem;
     }
 
@@ -135,7 +152,7 @@
         font-size: 0.95rem;
         font-weight: 500;
         line-height: 1.8;
-        color: var(--color-black);
+        color: var(--color-grey-900);
         margin-bottom: 1rem;
     }
 
@@ -151,7 +168,7 @@
     .card-light-title {
         font-size: 0.9rem;
         font-weight: 600;
-        color: var(--color-brown);
+        color: var(--color-grey-700);
         margin-bottom: 0.5rem;
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -160,7 +177,7 @@
     .card-light-text {
         font-size: 0.9rem;
         line-height: 1.6;
-        color: var(--color-gray);
+        color: var(--color-grey-500);
         margin-bottom: 0;
     }
 
@@ -176,7 +193,7 @@
         display: block;
         font-size: 0.85rem;
         font-weight: 600;
-        color: var(--color-brown);
+        color: var(--color-grey-700);
         margin-bottom: 0.5rem;
         text-transform: uppercase;
         letter-spacing: 0.03em;
@@ -189,9 +206,9 @@
         padding: 0.75rem 1rem;
         font-family: 'Inter', sans-serif;
         font-size: 0.95rem;
-        border: 2px solid var(--color-sand);
-        background-color: var(--color-ivory);
-        color: var(--color-black);
+        border: 2px solid var(--color-grey-300);
+        background-color: var(--color-white);
+        color: var(--color-grey-900);
         border-radius: 4px;
         transition: border-color 0.2s ease;
     }
@@ -200,7 +217,7 @@
     .form-select:focus,
     .form-textarea:focus {
         outline: none;
-        border-color: var(--color-teal);
+        border-color: var(--color-rose-500);
     }
 
     .form-textarea {
@@ -219,7 +236,7 @@
     .page-title {
         font-size: 2rem;
         font-weight: 700;
-        color: var(--color-black);
+        color: var(--color-grey-900);
         margin-bottom: 0.75rem;
     }
 
@@ -233,7 +250,7 @@
 
     .section-divider {
         border: none;
-        border-top: 1px solid var(--color-beige);
+        border-top: 1px solid var(--color-grey-100);
         margin: 2rem 0;
     }
 
