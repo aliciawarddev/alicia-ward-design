@@ -368,13 +368,6 @@ a {
     text-decoration: none;
 }
 
-/* Gallery CTA*/
-.gallery-cta {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    text-align: center;
-}
-
 
 /* ================================
    ABOUT
@@ -450,35 +443,6 @@ a {
     margin-bottom: 0;
 }
     */ 
-
-/* Bottom CTA */
-.about-cta {
-    text-align: center;
-    padding: 2rem 2.5rem;
-    /* background-color: var(--color-gray);*/ 
-    border-radius: 4px;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);*/ 
-    margin-top: 1rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about-cta h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    /* color: var(--color-ivory);*/ 
-    margin-bottom: 0.75rem;
-    color: var(--color-brown);
-}
-
-.about-cta p {
-    font-size: 0.95rem;
-    font-weight: 500;
-    line-height: 1.8;
-    /*color: var(--color-ivory);*/ 
-    margin: 0 auto 1.5rem;
-}
 
 /* ================================
    CONTACT
@@ -580,75 +544,19 @@ a {
 }
 
 .policy-item {
-    border-bottom: 1px solid var(--color-beige);
+    border-bottom: 1px solid var(--color-grey-100);
+    padding: 1.5rem 0;
 }
 
-.policy-item summary {
-    padding: 1.25rem 0;
+.policy-item:first-child {
+    padding-top: 0;
+}
+
+.policy-item h3 {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-black);
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.policy-item summary::-webkit-details-marker {
-    display: none;
-}
-
-.policy-item summary::after {
-    content: '+';
-    font-size: 1.25rem;
-    color: var(--color-teal-dark);
-    font-weight: 400;
-}
-
-.policy-item[open] summary::after {
-    content: '−';
-}
-
-.policy-item summary:hover {
-    color: var(--color-teal-dark);
-}
-
-.policy-body {
-    padding: 0 0 1.5rem 0;
-}
-
-.policy-body p {
-    font-size: 0.95rem;
-    font-weight: 450;
-    line-height: 1.7;
-    color: var(--color-brown);
+    color: var(--color-grey-900);
     margin-bottom: 0.75rem;
-}
-
-.policy-body p:last-child {
-    margin-bottom: 0;
-}
-
-.policies-contact {
-    padding: 1.5rem;
-    background-color: var(--color-beige);
-    max-width: 700px;
-    border-radius: 4px;
-}
-
-.policies-contact p {
-    margin-bottom: 0;
-    color: var(--color-brown);
-}
-
-.policies-contact a {
-    color: var(--color-teal-dark);
-    font-weight: 600;
-}
-
-.policies-contact a:hover {
-    color: var(--color-teal);
 }
 
 /* ================================

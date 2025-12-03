@@ -362,3 +362,18 @@
     font-weight: 400;
     color: var(--color-grey-300);
 }
+
+/* ================================
+   10. CALL TO ACTION
+   ================================ */
+
+.cta {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.cta .body-text {
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+}
