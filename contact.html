@@ -25,25 +25,25 @@
     <main>
         <section class="contact">
             <div class="page-header">
-                <h2>Contact</h2>
+                <h2 class="page-title">Contact</h2>
                 <p class="lead">Interested in a commission, collaboration, or have a question? I'd love to hear from you.</p>
             </div>
 
             <div class="contact-layout">
                 <form class="contact-form">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject" required>
+                        <label for="subject" class="form-label">Subject</label>
+                        <select id="subject" name="subject" class="form-select" required>
                             <option value="">Select a subject...</option>
                             <option value="commission">Commission Inquiry</option>
                             <option value="collaboration">Collaboration</option>
@@ -53,21 +53,21 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="6" class="form-textarea" required></textarea>
                     </div>
                     
-                    <button type="submit" class="cta-button">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
 
                 <div class="contact-aside">
-                    <div class="contact-card">
-                        <h3>Commissions</h3>
-                        <p>Looking for a custom piece? Let me know your vision—size, colors, style—and I'll get back to you with availability and pricing.</p>
+                    <div class="card-light">
+                        <h3 class="card-light-title">Commissions</h3>
+                        <p class="card-light-text">Looking for a custom piece? Let me know your vision—size, colors, style—and I'll get back to you with availability and pricing.</p>
                     </div>
-                    <div class="contact-card">
-                        <h3>Response Time</h3>
-                        <p>I typically respond within 2–3 business days. For urgent inquiries, please note that in your message.</p>
+                    <div class="card-light">
+                        <h3 class="card-light-title">Response Time</h3>
+                        <p class="card-light-text">I typically respond within 2–3 business days. For urgent inquiries, please note that in your message.</p>
                     </div>
                 </div>
             </div>
