@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Alicia Ward Design</title>
+    <!-- CSS Styles-->
+    <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
     <main>
         <section class="gallery">
             <div class="page-header">
-                <h2>Gallery</h2>
+                <h2 class="page-title">Gallery</h2>
                 <p class="lead">Hand-painted acrylic artwork on canvas, varnished for a glossy finish and protection. All paintings are unframed and ready to hang.</p>  <!-- moved inside page-header -->
             </div>
             
@@ -38,7 +40,7 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="images/placeholder-painting.png" alt="Art deco geometric pattern">
+                    <img src="images/placeholder-painting.png" alt="Art deco geometric pattern" class="thumbnail thumbnail-hover">
                     <div class="gallery-info">
                         <h3>Deco Lines</h3>
                         <p>11" × 14" · Acrylic on canvas</p>
@@ -47,7 +49,7 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="images/placeholder-painting.png" alt="Botanical study with detailed line work">
+                    <img src="images/placeholder-painting.png" alt="Botanical study with detailed line work" class="thumbnail thumbnail-hover">
                     <div class="gallery-info">
                         <h3>Botanical Detail</h3>
                         <p>16" × 20" · Acrylic on canvas</p>
@@ -56,7 +58,7 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="images/placeholder-painting.png" alt="Hexagonal tessellation pattern">
+                    <img src="images/placeholder-painting.png" alt="Hexagonal tessellation pattern" class="thumbnail thumbnail-hover">
                     <div class="gallery-info">
                         <h3>Hexagon Flow</h3>
                         <p>8" × 10" · Acrylic on canvas</p>
@@ -65,7 +67,7 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="images/placeholder-painting.png" alt="Geometric sunburst design">
+                    <img src="images/placeholder-painting.png" alt="Geometric sunburst design" class="thumbnail thumbnail-hover">
                     <div class="gallery-info">
                         <h3>Sunburst</h3>
                         <p>11" × 14" · Acrylic on canvas</p>
@@ -74,7 +76,7 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="images/placeholder-painting.png" alt="Interlocking diamond pattern">
+                    <img src="images/placeholder-painting.png" alt="Interlocking diamond pattern" class="thumbnail thumbnail-hover">
                     <div class="gallery-info">
                         <h3>Diamond Grid</h3>
                         <p>8" × 10" · Acrylic on canvas</p>
@@ -82,8 +84,10 @@
                     </div>
                 </div>
             </div>
+            <!-- CTA button-->
             <div class="gallery-cta">
-                <p>Don't see exactly what you're looking for? <a href="contact.html">Let's create something custom.</a></p>
+                <p class="body-text">Don't see exactly what you're looking for?</p>
+                <a href="contact.html" class="btn btn-secondary">Let's create something custom</a>
             </div>
         </section>
     </main>
