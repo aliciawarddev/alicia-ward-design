@@ -484,24 +484,11 @@ a {
    POLICIES
    ================================ */
 .policies-content {
-    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
     margin-bottom: 3rem;
-}
-
-.policy-item {
-    border-bottom: 1px solid var(--color-grey-100);
-    padding: 1.5rem 0;
-}
-
-.policy-item:first-child {
-    padding-top: 0;
-}
-
-.policy-item h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-grey-900);
-    margin-bottom: 0.75rem;
 }
 
 /* ================================
