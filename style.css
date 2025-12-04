@@ -146,9 +146,8 @@ a {
    HERO SECTION (Homepage)
    ================================ */
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
     min-height: 60vh;
