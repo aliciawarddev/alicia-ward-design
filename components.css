@@ -227,25 +227,9 @@ margin-bottom: 1.25rem;
    5. PAGE HEADER
    ================================ */
 
-   /* 
-    .page-header {
-        margin-bottom: 2.5rem;
-    }
-
-    .page-title {
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--color-grey-900);
-        margin-bottom: 0.75rem;
-    }
-
-    .page-header .lead {
-        max-width: 550px;
-    }
-        */ 
-
 .page-header {
     margin-bottom: 2.5rem;
+    text-align: center;
 }
 
 .page-title {
@@ -264,6 +248,8 @@ margin-bottom: 1.25rem;
     line-height: 1.7;
     color: var(--color-grey-500);
     max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ================================
