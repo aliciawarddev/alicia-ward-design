@@ -454,10 +454,12 @@ a {
    ================================ */
 
 .contact-layout {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 3rem;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
 }
 
 /* Form */
@@ -466,6 +468,8 @@ a {
     padding: 2rem;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    margin: 0 150px;
 }
 
 .contact-form .btn {
@@ -475,8 +479,12 @@ a {
 /* Aside Cards */
 .contact-aside {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5rem;
+}
+
+.contact-aside .card-secondary {
+    flex: 1;
 }
 
 /* ================================
