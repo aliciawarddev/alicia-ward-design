@@ -135,7 +135,7 @@
 }
 
 .card-primary-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-rose-700);
     margin-bottom: 0.75rem;
@@ -143,25 +143,27 @@
 
 .card-primary-text {
     font-size: 0.95rem;
-    font-weight: 500;
-    line-height: 1.8;
-    color: var(--color-grey-900);
-    margin-bottom: 1rem;
+    font-weight: 450;
+    line-height: 1.7;
+    color: var(--color-grey-700);
+    margin-bottom: 0.75rem;
 }
 
 .card-primary-text:last-child {
     margin-bottom: 0;
 }
 
-/* Secondary Card - no background */
+/* Secondary Card */
 .card-secondary {
     padding: 1.25rem;
+    background-color: var(--color-rose-100);
+    border-radius: 4px;
 }
 
 .card-secondary-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--color-grey-700);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-grey-900);
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -169,6 +171,7 @@
 
 .card-secondary-text {
     font-size: 0.9rem;
+    font-weight: 400;
     line-height: 1.6;
     color: var(--color-grey-500);
     margin-bottom: 0;
