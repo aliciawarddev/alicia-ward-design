@@ -126,53 +126,53 @@
    3. CARDS
    ================================ */
 
-   /* Standard Card - beige background */
-    .card {
-        padding: 2rem;
-        background-color: var(--color-grey-100);
-        border-radius: 4px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
+/* Primary Card - with background */
+.card-primary {
+    padding: 2rem;
+    background-color: var(--color-grey-100);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-    .card-title {
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: var(--color-rose-700);
-        margin-bottom: 0.75rem;
-    }
+.card-primary-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-rose-700);
+    margin-bottom: 0.75rem;
+}
 
-    .card-text {
-        font-size: 0.95rem;
-        font-weight: 500;
-        line-height: 1.8;
-        color: var(--color-grey-900);
-        margin-bottom: 1rem;
-    }
+.card-primary-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--color-grey-900);
+    margin-bottom: 1rem;
+}
 
-    .card-text:last-child {
-        margin-bottom: 0;
-    }
+.card-primary-text:last-child {
+    margin-bottom: 0;
+}
 
-    /* Light Card - no background */
-    .card-light {
-        padding: 1.25rem;
-    }
+/* Secondary Card - no background */
+.card-secondary {
+    padding: 1.25rem;
+}
 
-    .card-light-title {
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--color-grey-700);
-        margin-bottom: 0.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
+.card-secondary-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-grey-700);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
 
-    .card-light-text {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        color: var(--color-grey-500);
-        margin-bottom: 0;
-    }
+.card-secondary-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-grey-500);
+    margin-bottom: 0;
+}
 
 /* ================================
    4. FORM ELEMENTS
