@@ -488,6 +488,8 @@ a {
     gap: 1.5rem;
     max-width: 900px;
     margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ================================
