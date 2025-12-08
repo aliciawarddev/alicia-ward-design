@@ -140,7 +140,6 @@
     color: var(--color-rose-700);
     margin-bottom: 0.75rem;
     font-family: "Nunito", sans-serif;
-    
 }
 
 .card-primary-text {
@@ -275,6 +274,7 @@ margin-bottom: 1.25rem;
         border-radius: 4px;
     }
 
+    /* 
     .thumbnail-hover {
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
@@ -283,6 +283,7 @@ margin-bottom: 1.25rem;
         transform: scale(1.03);
         opacity: 0.9;
     }
+        */ 
 
     /* ================================
    8. HEADER & NAVIGATION

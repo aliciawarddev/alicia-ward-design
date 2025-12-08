@@ -240,11 +240,6 @@ a {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.featured-item:hover img {
-    transform: scale(1.03);
-    opacity: 0.9;
-}
-
 /* Text Link */
 .text-link {
     display: inline-block;
@@ -314,10 +309,6 @@ a {
 
 .gallery-item {
     transition: opacity 0.2s ease; 
-}
-
-.gallery-item:hover {
-    opacity: 0.90;  /* changed - subtle fade instead of lift */
 }
 
 .gallery-item img {
