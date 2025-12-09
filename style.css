@@ -205,19 +205,6 @@ a {
 /* ================================
    FEATURED SECTION (Homepage)
    ================================ */
-.featured {
-    padding-top: 2rem;
-    border-top: 1px solid var(--color-beige);
-}
-
-.featured h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-brown);
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
 
 .featured-grid {
     display: grid;
@@ -238,19 +225,6 @@ a {
     display: block;
     transition: transform 0.3s ease, opacity 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-/* Text Link */
-.text-link {
-    display: inline-block;
-    color: var(--color-teal-dark);
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
-}
-
-.text-link:hover {
-    color: var(--color-teal);
 }
 
 /* ================================
