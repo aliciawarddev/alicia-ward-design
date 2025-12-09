@@ -314,10 +314,11 @@ a {
 .gallery-item img {
     width: 100%;
     aspect-ratio: 1;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
+    background: var(--color-grey-100);
 }
 
 .gallery-info {
@@ -361,7 +362,6 @@ a {
     font-weight: 500;
     text-decoration: none;
 }
-
 
 /* ================================
    ABOUT
