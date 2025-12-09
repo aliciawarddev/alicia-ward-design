@@ -274,18 +274,7 @@ margin-bottom: 1.25rem;
         border-radius: 4px;
     }
 
-    /* 
-    .thumbnail-hover {
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .thumbnail-hover:hover {
-        transform: scale(1.03);
-        opacity: 0.9;
-    }
-        */ 
-
-    /* ================================
+/* ================================
    8. HEADER & NAVIGATION
    ================================ */
 
@@ -385,4 +374,29 @@ margin-bottom: 1.25rem;
 .cta .body-text {
     margin-bottom: 1.25rem;
     font-weight: 600;
+}
+
+/* ================================
+   Lightbox
+   ================================ */
+
+   /* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
 }
