@@ -303,8 +303,8 @@ a {
 /* Gallery Grid*/
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem 1rem;
 }
 
 .gallery-item {
