@@ -163,23 +163,29 @@ a {
     display: block;
 }
 
-.hero-text {
-    padding: 0;
-}
-
-.hero-text h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-black);
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
 .hero-text p {
     font-size: 1.1rem;
-    color: var(--color-gray);
+    color: var(--color-grey);
     margin-bottom: 1rem;
     max-width: 400px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-statement {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+
+.intro-footer {
+    font-size: 0.9rem;
+    color: var(--color-grey-700);
 }
 
 /* CTA Button */
