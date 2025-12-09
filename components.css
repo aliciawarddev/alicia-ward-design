@@ -266,9 +266,9 @@ margin-bottom: 1.25rem;
    ================================ */
 
     .thumbnail {
-        width: 100%;
         aspect-ratio: 1;
         object-fit: cover;
+        width: 100%;
         display: block;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         border-radius: 4px;
