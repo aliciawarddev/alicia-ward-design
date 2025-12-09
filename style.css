@@ -149,8 +149,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
-    min-height: 60vh;
+    margin-bottom: 0;
 }
 
 .hero-image {
@@ -165,7 +164,7 @@ a {
 }
 
 .hero-text {
-    padding: 2rem 0;
+    padding: 0;
 }
 
 .hero-text h2 {
@@ -179,7 +178,7 @@ a {
 .hero-text p {
     font-size: 1.1rem;
     color: var(--color-gray);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     max-width: 400px;
 }
 

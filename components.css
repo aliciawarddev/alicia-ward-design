@@ -116,6 +116,7 @@
         font-size: 0.95rem;
         text-decoration: none;
         transition: color 0.2s ease;
+        text-decoration: underline;
     }
 
     .text-link:hover {
@@ -377,7 +378,7 @@ margin-bottom: 1.25rem;
 }
 
 /* ================================
-   Lightbox
+   LIGHTBOX
    ================================ */
 
    /* Lightbox */
