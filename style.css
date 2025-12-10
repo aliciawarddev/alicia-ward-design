@@ -1,8 +1,8 @@
 /* ================================
    COLOR VARIABLES
    ================================ */
+/* Archived color palette 
 :root {
-  /* Neutrals - Light to Dark */
   --color-ivory: #FFFEF9;
   --color-beige: #E8E3D5;
   --color-sand: #C9BDA8;
@@ -10,11 +10,11 @@
   --color-brown: #4A423A;
   --color-black: #1A1612;
   
-  /* Accent Colors */
   --color-teal: #2AB5B5;
   --color-teal-dark: #1E7A8C;
   --color-teal-muted: #5A9A9A;
 }
+  */
 
 /* ================================
    RESET & BASE

@@ -8,8 +8,27 @@
 /* ================================
    COLOR VARIABLES
    ================================ */
+/* UPDATED COLOR PALETTE */
 :root {
-    /* Neutrals*/
+    /* Neutrals - Cool */
+    --color-white: #FAFAFA;
+    --color-grey-100: #E5E7EB;
+    --color-grey-300: #9CA3AF;
+    --color-grey-500: #6B7280;
+    --color-grey-700: #374151;
+    --color-grey-900: #111827;
+    --color-black: #030712;
+
+    /* Teal Accents */
+    --color-teal-100: #CFFAFE;
+    --color-teal-300: #67E8F9;
+    --color-teal-400: #22D3EE;
+    --color-teal-500: #06B6D4;
+    --color-teal-700: #0E7490;
+}
+
+/* Archived Color Palette 
+:root {
     --color-white: #FAFAF8;
     --color-grey-100: #E2DFDA;
     --color-grey-300: #9C9891;
@@ -18,12 +37,11 @@
     --color-grey-800: #4A4845;
     --color-grey-900: #2E2C2A;
 
-
-    /* Dusty Rose Accents */
     --color-rose-100: #F2D4D0;
     --color-rose-500: #D4918B;
     --color-rose-700: #B86B65;
 }
+*/
 
 /* Archived - Previous color palette 
 :root {
@@ -48,7 +66,7 @@
         font-size: 0.95rem;
         font-weight: 450;
         line-height: 1.7;
-        color: var(--color-grey-800);
+        color: var(--color-grey-900);
     }
 
     .section-label {
@@ -78,30 +96,30 @@
     }
 
     .btn-primary {
-        background-color: var(--color-rose-700);
+        background-color: var(--color-teal-700);
         color: var(--color-ivory);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
     .btn-primary:hover {
-        background-color: var(--color-rose-500);
+        background-color: var(--color-teal-500);
     }
 
     .btn-secondary {
         background-color: transparent;
-        border: 2px solid var(--color-rose-700);
-        color: var(--color-rose-700);
+        border: 2px solid var(--color-teal-700);
+        color: var(--color-teal-700);
     }
 
     .btn-secondary:hover {
-        background-color: var(--color-rose-700);
+        background-color: var(--color-teal-700);
         color: var(--color-white);
     }
 
     /* Text Link */
     .text-link {
         display: inline-block;
-        color: var(--color-rose-700);
+        color: var(--color-teal-700);
         font-weight: 600;
         font-size: 0.95rem;
         text-decoration: none;
@@ -110,7 +128,7 @@
     }
 
     .text-link:hover {
-        color: var(--color-rose-500);
+        color: var(--color-teal-500);
     }
 
 /* ================================
@@ -128,7 +146,7 @@
 .card-primary-title {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--color-rose-700);
+    color: var(--color-teal-700);
     margin-bottom: 0.75rem;
     font-family: "Nunito", sans-serif;
 }
@@ -148,7 +166,7 @@
 /* Secondary Card */
 .card-secondary {
     padding: 1.25rem;
-    background-color: var(--color-rose-100);
+    background-color: var(--color-teal-100);
     border-radius: 4px;
 }
 
@@ -205,7 +223,7 @@ margin-bottom: 1.25rem;
 .form-select:focus,
 .form-textarea:focus {
     outline: none;
-    border-color: var(--color-rose-500);
+    border-color: var(--color-teal-500);
 }
 
 .form-textarea {
@@ -223,12 +241,12 @@ margin-bottom: 1.25rem;
 }
 
 .page-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--color-grey-900);
     margin-bottom: 1rem;
     display: inline-block;
-    border-bottom: 3px solid var(--color-rose-500);
+    border-bottom: 3px solid var(--color-teal-500);
     padding-bottom: 0.5rem;
 }
 
@@ -305,7 +323,7 @@ margin-bottom: 1.25rem;
 }
 
 .site-nav-links a:hover {
-    color: var(--color-rose-500);
+    color: var(--color-teal-500);
 }
 
 /* ================================
@@ -341,7 +359,7 @@ margin-bottom: 1.25rem;
 }
 
 .site-footer-links a:hover {
-    color: var(--color-rose-500);
+    color: var(--color-teal-500);
 }
 
 .site-footer-content p {
