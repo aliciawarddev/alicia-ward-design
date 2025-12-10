@@ -185,6 +185,7 @@ a {
 .intro-footer {
     font-size: 0.9rem;
     color: var(--color-grey-700);
+    margin-bottom: 4rem;
 }
 
 /* CTA Button */

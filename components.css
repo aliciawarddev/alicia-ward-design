@@ -456,3 +456,17 @@ margin-bottom: 1.25rem;
 .process-content {
     /* Add your layout styling here - flex, grid, etc. */
 }
+
+/* Partition Banner*/
+.partition-banner {
+    width: 100%;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.partition-banner img {
+    width: 100%;
+    height: 20rem;
+    display: block;
+
+}
