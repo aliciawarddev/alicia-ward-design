@@ -280,8 +280,6 @@ margin-bottom: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .site-nav-logo {
@@ -325,8 +323,6 @@ margin-bottom: 1.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .site-footer-links {
