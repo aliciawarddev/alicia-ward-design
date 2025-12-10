@@ -259,7 +259,6 @@ margin-bottom: 1.25rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
 }
 
 /* ================================
@@ -324,6 +323,12 @@ margin-bottom: 1.25rem;
 
 .site-nav-links a:hover {
     color: var(--color-teal-500);
+}
+
+/* Logo*/
+.site-nav-logo img {
+    height: 4.5rem; /* adjust as needed */
+    width: auto;
 }
 
 /* ================================
