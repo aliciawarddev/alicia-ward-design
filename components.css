@@ -4,16 +4,6 @@
 
    /* Reusable UI patterns extracted for consistency across pages and faster development on future projects
    Requires: CSS custom variables
-   
-   Contents:
-   1. Typography
-   2. Buttons & Links
-   3. Cards
-   4. Form Elements
-   5. Page Header
-   6. Section Dividers
-   7. Image Thumbnail
-   */
 
 /* ================================
    COLOR VARIABLES
@@ -51,7 +41,7 @@
 */
 
 /* ================================
-   1. TYPOGRAPHY
+   TYPOGRAPHY
    ================================ */
 
     .body-text {
@@ -70,7 +60,7 @@
     }
 
 /* ================================
-   2. BUTTONS & LINKS
+   BUTTONS & LINKS
    ================================ */
 
    /* Primary CTA Button */
@@ -124,7 +114,7 @@
     }
 
 /* ================================
-   3. CARDS
+   CARDS
    ================================ */
 
 /* Primary Card - with background */
@@ -180,7 +170,7 @@
 }
 
 /* ================================
-   4. FORM ELEMENTS
+   FORM ELEMENTS
    ================================ */
 
 .form-group {
@@ -224,7 +214,7 @@ margin-bottom: 1.25rem;
 }
 
 /* ================================
-   5. PAGE HEADER
+   PAGE HEADER
    ================================ */
 
 .page-header {
@@ -255,7 +245,7 @@ margin-bottom: 1.25rem;
 }
 
 /* ================================
-   6. SECTION DIVIDERS
+   SECTION DIVIDERS
    ================================ */
 
     .section-divider {
@@ -265,7 +255,7 @@ margin-bottom: 1.25rem;
     }
 
 /* ================================
-   7. IMAGE THUMBNAIL
+   IMAGE THUMBNAIL
    ================================ */
 
     .thumbnail {
@@ -278,7 +268,7 @@ margin-bottom: 1.25rem;
     }
 
 /* ================================
-   8. HEADER & NAVIGATION
+   HEADER & NAVIGATION
    ================================ */
 
 .site-header {
@@ -321,7 +311,7 @@ margin-bottom: 1.25rem;
 }
 
 /* ================================
-   9. FOOTER
+   FOOTER
    ================================ */
 
 .site-footer {
@@ -365,7 +355,7 @@ margin-bottom: 1.25rem;
 }
 
 /* ================================
-   10. CALL TO ACTION
+   CALL TO ACTION
    ================================ */
 
 .cta {
