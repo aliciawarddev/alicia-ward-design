@@ -324,14 +324,19 @@ margin-bottom: 1.25rem;
 }
 
 .site-nav-links a {
-    color: var(--color-grey-100);
+    display: block; /* Added for proper image display */
     text-decoration: none;
-    transition: color 0.2s ease;
-    font-weight: 600;
+    transition: opacity 0.2s ease; /* Changed from color transition */
 }
 
 .site-nav-links a:hover {
-    color: var(--color-teal-500);
+    opacity: 0.7; /* Changed from color change */
+}
+
+.site-nav-links img { /* New rule for nav link images */
+    height: 4.5rem;
+    width: auto;
+    display: block;
 }
 
 /* Logo*/
