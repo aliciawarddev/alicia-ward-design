@@ -334,7 +334,7 @@ margin-bottom: 1.25rem;
 }
 
 .site-nav-links img { /* New rule for nav link images */
-    height: 4.5rem;
+    height: 4em;
     width: auto;
     display: block;
 }
