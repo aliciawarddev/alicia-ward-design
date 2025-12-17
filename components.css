@@ -8,7 +8,19 @@
 /* ================================
    COLOR VARIABLES
    ================================ */
-/* UPDATED COLOR PALETTE */
+/* MCM Color Palette */
+:root {
+    --primary: #C8685E;
+    --secondary: #7A8B6F;
+    --accent-1: #D4887C;
+    --accent-2: #D4B0A8;
+    --bg-main: #F7F3ED;
+    --bg-card: #FFFDF9;
+    --text-primary: #1A1A1A;
+    --text-secondary: #746D68;
+}
+
+/* PREVIOUS PALETTE */
 :root {
     /* Neutrals - Cool */
     --color-white: #FAFAFA;
@@ -27,37 +39,6 @@
     --color-teal-700: #0E7490;
 }
 
-/* Archived Color Palette 
-:root {
-    --color-white: #FAFAF8;
-    --color-grey-100: #E2DFDA;
-    --color-grey-300: #9C9891;
-    --color-grey-500: #7A7671;
-    --color-grey-700: #5C5955;
-    --color-grey-800: #4A4845;
-    --color-grey-900: #2E2C2A;
-
-    --color-rose-100: #F2D4D0;
-    --color-rose-500: #D4918B;
-    --color-rose-700: #B86B65;
-}
-*/
-
-/* Archived - Previous color palette 
-:root {
-  --color-ivory: #FFFEF9;
-  --color-beige: #E8E3D5;
-  --color-sand: #C9BDA8;
-  --color-gray: #8B8578;
-  --color-brown: #4A423A;
-  --color-black: #1A1612;
-  
-  --color-teal: #2AB5B5;
-  --color-teal-dark: #1E7A8C;
-  --color-teal-muted: #5A9A9A;
-}
-*/
-
 /* ================================
    TYPOGRAPHY
    ================================ */
@@ -75,6 +56,14 @@
         color: var(--color-grey-700);
         text-transform: uppercase;
         letter-spacing: 0.05em;
+    }
+
+    main {
+        max-width: 75rem;
+    }
+
+    body {
+        max-width: 75rem;
     }
 
 /* ================================
