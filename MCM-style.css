@@ -3,11 +3,13 @@
    =================================== */
 
 .assets-container {
-    gap: 1rem;
+    gap: 2rem;
     display: flex;
     flex-direction: row;
     margin: 2rem;
     padding: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .asset-semicircle {
@@ -15,6 +17,13 @@
     height: 25rem;
     width: 15rem;
     border-radius: 7.5rem 7.5rem 0 0;
+}
+
+.asset-medium-circle {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
 }
 
 /* ===================================
