@@ -351,6 +351,201 @@ section {
     background-color: var(--primary);
 }
 
+/* Circle - bold border */
+.circle-bold-border {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 1.5rem solid var(--primary);
+}
+
+/* Circle - thin border */
+.circle-thin-border {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+}
+
+/* Circle - concentric lines */
+.circle-concentric {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-a {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-b {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-c {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-d {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-e {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+}
+
+/* Circle - filled with outline */
+.circle-filled-outline {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-filled-outline-inner {
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 1.5rem);
+    border-radius: 50%;
+    background-color: var(--primary);
+    opacity: 0.4;
+}
+
+/* Dot circle filled with more dots inside */
+.dot-circle-filled-interior {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.dot-circle-filled-interior .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dot-circle-filled-interior .dot:nth-child(1) { transform: rotate(0deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(2) { transform: rotate(30deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(3) { transform: rotate(60deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(4) { transform: rotate(90deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(5) { transform: rotate(120deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(6) { transform: rotate(150deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(7) { transform: rotate(180deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(8) { transform: rotate(210deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(9) { transform: rotate(240deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(10) { transform: rotate(270deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(11) { transform: rotate(300deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(12) { transform: rotate(330deg) translateX(3.5rem) translateY(-50%); }
+
+.dot-circle-filled-interior .dot-inner {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dot-circle-filled-interior .dot-inner:nth-child(13) { transform: rotate(30deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(14) { transform: rotate(90deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(15) { transform: rotate(150deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(16) { transform: rotate(210deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(17) { transform: rotate(270deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(18) { transform: rotate(330deg) translateX(1.75rem) translateY(-50%); }
+
+.dot-circle-filled-interior .dot-center {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hexagonal dot circle */
+.dot-hex {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.dot-hex .dot,
+.dot-hex .dot-inner,
+.dot-hex .dot-center {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* Outer - 6 dots, 60deg apart */
+.dot-hex .dot:nth-child(1) { transform: rotate(0deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(2) { transform: rotate(60deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(3) { transform: rotate(120deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(4) { transform: rotate(180deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(5) { transform: rotate(240deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(6) { transform: rotate(300deg) translateX(3rem) translateY(-50%); }
+
+/* Inner - 6 dots, 60deg apart, offset 30deg */
+.dot-hex .dot-inner:nth-child(7) { transform: rotate(30deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(8) { transform: rotate(90deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(9) { transform: rotate(150deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(10) { transform: rotate(210deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(11) { transform: rotate(270deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(12) { transform: rotate(330deg) translateX(1.7rem) translateY(-50%); }
+
+.dot-hex .dot-center:nth-child(13) { transform: translate(-50%, -50%); }
+
 /* ===================================
    ROW 3 - LINES
    =================================== */
@@ -622,6 +817,27 @@ section {
     position: absolute;
     top: 0;
     left: 1rem;
+}
+
+/* Semicircle - filled with outline */
+.semicircle-filled-outline {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 10rem 10rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: relative;
+}
+
+.semicircle-filled-outline-inner {
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 0.75rem);
+    border-radius: 9.25rem 9.25rem 0 0;
+    background-color: var(--primary);
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    left: 0.75rem;
 }
 
 /* ===================================
