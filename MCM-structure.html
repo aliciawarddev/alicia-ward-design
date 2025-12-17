@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia Ward Design | Artist Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="MCM-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Alicia Ward</h1>
+                    <p class="hero-subtitle">Digital & Traditional Artist</p>
+                    <p class="hero-description">Creating geometric patterns, botanical studies, and minimalist artwork through digital illustration and acrylic painting.</p>
+                    <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                </div>
+                <div class="hero-shapes">
+                    <!-- Decorative geometric shapes -->
+                    <div class="shape shape-semicircle"></div>
+                    <div class="shape shape-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/headshot-placeholder.jpg" alt="Alicia Ward">
+                    </div>
+                    <!-- Decorative accent shape -->
+                    <div class="shape shape-quarter-circle"></div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-label">About Me</h2>
+                    <h3 class="about-heading">Artist & Designer</h3>
+                    <p>I create artwork that explores the intersection of geometric precision and organic forms. Working primarily in digital media on iPad and with traditional acrylics on canvas, my style focuses on clean lines, tessellations, and botanical studies.</p>
+                    <p>Each piece reflects a minimalist aesthetic that celebrates pattern, color, and the beauty of structured design. My work ranges from intricate geometric patterns to delicate botanical illustrations, all unified by a commitment to clarity and intentional composition.</p>
+                    <blockquote class="pullquote">
+                        "Art is the elimination of the unnecessary."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-label">Portfolio</h2>
+            <h3 class="gallery-heading">Selected Works</h3>
+            
+            <!-- Category Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="digital">Digital</button>
+                <button class="filter-btn" data-filter="physical">Physical</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Placeholder gallery items -->
+                <div class="gallery-item" data-category="digital">
+                    <img src="images/artwork-placeholder-1.jpg" alt="Digital artwork 1">
+                </div>
+                <div class="gallery-item" data-category="physical">
+                    <img src="images/artwork-placeholder-2.jpg" alt="Physical artwork 1">
+                </div>
+                <div class="gallery-item" data-category="digital">
+                    <img src="images/artwork-placeholder-3.jpg" alt="Digital artwork 2">
+                </div>
+                <div class="gallery-item" data-category="digital">
+                    <img src="images/artwork-placeholder-4.jpg" alt="Digital artwork 3">
+                </div>
+                <div class="gallery-item" data-category="physical">
+                    <img src="images/artwork-placeholder-5.jpg" alt="Physical artwork 2">
+                </div>
+                <div class="gallery-item" data-category="digital">
+                    <img src="images/artwork-placeholder-6.jpg" alt="Digital artwork 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-label">Get In Touch</h2>
+                    <h3 class="contact-heading">Let's Connect</h3>
+                    <p>Interested in my work or have a project in mind? I'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@aliciaward.design">hello@aliciaward.design</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location</span>
+                            <p>Calgary, Alberta</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alicia Ward Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Linked Script-->
+    <script src="MCM-script.js"></script>
+</body>
+</html>
