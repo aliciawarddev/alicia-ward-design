@@ -105,7 +105,7 @@ p {
    =================================== */
 
 .container {
-    max-width: 75rem;
+    max-width: 75rem !important;
     margin: 0 auto;
     padding: 0 5rem;
 }
@@ -251,35 +251,150 @@ section {
     margin-bottom: 2rem;
 }
 
+/* GEOMETRIC SHAPES */
+
 .hero-shapes {
     position: relative;
     height: 100%;
     min-height: 30rem;
 }
 
-/* Geometric Shapes */
-.shape {
-    position: absolute;
+/* Medium circle */
+.asset-medium-circle {
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
-}
-
-.shape-semicircle {
-    width: 31.25rem;
-    height: 31.25rem;
-    background-color: var(--primary);
-    opacity: 0.4;
-    top: 50%;
-    right: -10rem;
-    transform: translateY(-50%);
-}
-
-.shape-circle {
-    width: 15rem;
-    height: 15rem;
     background-color: var(--accent-2);
-    opacity: 0.5;
-    bottom: 5rem;
-    right: 5rem;
+    opacity: 0.7;
+    position: relative;
+    margin-left: 14rem;
+    margin-bottom: -2rem;
+}
+
+/* Arch 2 - Concentric Lines */
+.arch-2 {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: relative;
+    transform: rotate(-90deg) scale(1.4); /* rotate so curved part faces right, flat edge on left; scale up 1.5x */
+    opacity: 0.4; /* reduce opacity */
+    position: relative;
+    margin-left: 3rem;
+}
+
+.arch-2-a {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 7rem 7rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-b {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 6.5rem 6.5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-c {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 6rem 6rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-d {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 5.5rem 5.5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-e {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 5rem 5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-f {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 4.5rem 4.5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-g {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 4rem 4rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-h {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 3.5rem 3.5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-i {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 3rem 3rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+/* Large semicircle */
+.asset-semicircle {
+    background-color: var(--secondary);
+    height: 8rem;
+    width: 16rem;
+    border-radius: 8rem 8rem 0 0;
+    opacity: 0.4;
+    z-index: 2;
+    position: relative;
+    margin-top: -2.5rem;
+    margin-left: -4rem;
 }
 
 /* ===================================
