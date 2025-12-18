@@ -1,0 +1,899 @@
+/* ===================================
+   CSS RESET & BASE STYLES
+   =================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-main);
+}
+
+/* ===================================
+   CSS VARIABLES - DESIGN SYSTEM
+   =================================== */
+
+:root {
+    /* Colors */
+    --primary: #C8685E;        /* Clay Rose */
+    --secondary: #7A8B6F;      /* Sage Green */
+    --accent-1: #D4887C;       /* Dusty Coral */
+    --accent-2: #D4B0A8;       /* Rosy Taupe */
+    --bg-main: #F7F3ED;        /* Pale Sand */
+    --bg-alt: #FFFDF9;         /* Ivory */
+    --text-dark: #1A1A1A;      /* Almost Black */
+    --text-light: #746D68;     /* Warm Grey */
+
+    /* Spacing */
+    --spacing-unit: 0.5rem;    /* 8px base */
+    --spacing-sm: 1.5rem;      /* 24px */
+    --spacing-md: 3rem;        /* 48px */
+    --spacing-lg: 7.5rem;      /* 120px */
+
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Transitions */
+    --transition-base: 0.3s ease;
+}
+
+/* ===================================
+   LAYOUT CONTAINERS
+   =================================== */
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+section {
+    padding: var(--spacing-lg) 0;
+}
+
+/* ===================================
+   ASSETS - CONTAINER AND ROWS
+   =================================== */
+
+.assets-container {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* ===================================
+   ROW 1 - ARCHES
+   =================================== */
+
+/* Arch 1 - Solid with cutout */
+.arch-1 {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    z-index: 1;
+    position: relative;
+    border: 4rem solid var(--primary);
+    border-bottom: none;
+}
+
+.arch-1-negative {
+    background-color: var(--bg-main);
+    width: 7rem;
+    height: 16rem;
+    border-radius: 3.5rem 3.5rem 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Arch 2 - Concentric lines */
+.arch-2 {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: relative;
+}
+
+.arch-2-a {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 7rem 7rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-b {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 6.5rem 6.5rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-c {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 6rem 6rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-d {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 5.5rem 5.5rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-e {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 5rem 5rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-f {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 4.5rem 4.5rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-g {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 4rem 4rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-h {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 3.5rem 3.5rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+.arch-2-i {
+    width: calc(100% - 1rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 3rem 3rem 0 0;
+    border: 0.25rem solid var(--secondary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+}
+
+/* Arch 3 - Outline only */
+.arch-3 {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    z-index: 1;
+    position: relative;
+    border: 1.5rem solid var(--primary);
+    border-bottom: none;
+}
+
+/* Arch 4 - Solid filled */
+.arch-4 {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    z-index: 1;
+    position: relative;
+    background-color: var(--secondary);
+}
+
+/* Arch 5 - Thin outline */
+.arch-5 {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    z-index: 1;
+    position: relative;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+}
+
+/* ===================================
+   ROW 2 - DOTS & PATTERNS
+   =================================== */
+
+/* Medium circle */
+.asset-medium-circle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+
+/* Grid of small dots (5x5) */
+.dot-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.dot-grid .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+
+/* Dots arranged in circle - filled */
+.dot-circle-filled {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.dot-circle-filled .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dot-circle-filled .dot:nth-child(1) { transform: rotate(0deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(2) { transform: rotate(30deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(3) { transform: rotate(60deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(4) { transform: rotate(90deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(5) { transform: rotate(120deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(6) { transform: rotate(150deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(7) { transform: rotate(180deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(8) { transform: rotate(210deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(9) { transform: rotate(240deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(10) { transform: rotate(270deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(11) { transform: rotate(300deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled .dot:nth-child(12) { transform: rotate(330deg) translateX(3.5rem) translateY(-50%); }
+
+/* Dots arranged in circle - unfilled/outline */
+.dot-circle-unfilled {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.dot-circle-unfilled .dot-outline {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: 0.125rem solid var(--primary);
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dot-circle-unfilled .dot-outline:nth-child(1) { transform: rotate(0deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(2) { transform: rotate(30deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(3) { transform: rotate(60deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(4) { transform: rotate(90deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(5) { transform: rotate(120deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(6) { transform: rotate(150deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(7) { transform: rotate(180deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(8) { transform: rotate(210deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(9) { transform: rotate(240deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(10) { transform: rotate(270deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(11) { transform: rotate(300deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-unfilled .dot-outline:nth-child(12) { transform: rotate(330deg) translateX(3.5rem) translateY(-50%); }
+
+/* Single small dot */
+.dot-single {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+/* Circle - bold border */
+.circle-bold-border {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 1.5rem solid var(--primary);
+}
+
+/* Circle - thin border */
+.circle-thin-border {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+}
+
+/* Circle - concentric lines */
+.circle-concentric {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-a {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-b {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-c {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-d {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-concentric-e {
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    position: absolute;
+}
+
+/* Circle - filled with outline */
+.circle-filled-outline {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--primary);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-filled-outline-inner {
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 1.5rem);
+    border-radius: 50%;
+    background-color: var(--primary);
+    opacity: 0.4;
+}
+
+/* Dot circle filled with more dots inside */
+.dot-circle-filled-interior {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.dot-circle-filled-interior .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dot-circle-filled-interior .dot:nth-child(1) { transform: rotate(0deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(2) { transform: rotate(30deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(3) { transform: rotate(60deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(4) { transform: rotate(90deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(5) { transform: rotate(120deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(6) { transform: rotate(150deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(7) { transform: rotate(180deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(8) { transform: rotate(210deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(9) { transform: rotate(240deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(10) { transform: rotate(270deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(11) { transform: rotate(300deg) translateX(3.5rem) translateY(-50%); }
+.dot-circle-filled-interior .dot:nth-child(12) { transform: rotate(330deg) translateX(3.5rem) translateY(-50%); }
+
+.dot-circle-filled-interior .dot-inner {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.dot-circle-filled-interior .dot-inner:nth-child(13) { transform: rotate(30deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(14) { transform: rotate(90deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(15) { transform: rotate(150deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(16) { transform: rotate(210deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(17) { transform: rotate(270deg) translateX(1.75rem) translateY(-50%); }
+.dot-circle-filled-interior .dot-inner:nth-child(18) { transform: rotate(330deg) translateX(1.75rem) translateY(-50%); }
+
+.dot-circle-filled-interior .dot-center {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hexagonal dot circle */
+.dot-hex {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+
+.dot-hex .dot,
+.dot-hex .dot-inner,
+.dot-hex .dot-center {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* Outer - 6 dots, 60deg apart */
+.dot-hex .dot:nth-child(1) { transform: rotate(0deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(2) { transform: rotate(60deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(3) { transform: rotate(120deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(4) { transform: rotate(180deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(5) { transform: rotate(240deg) translateX(3rem) translateY(-50%); }
+.dot-hex .dot:nth-child(6) { transform: rotate(300deg) translateX(3rem) translateY(-50%); }
+
+/* Inner - 6 dots, 60deg apart, offset 30deg */
+.dot-hex .dot-inner:nth-child(7) { transform: rotate(30deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(8) { transform: rotate(90deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(9) { transform: rotate(150deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(10) { transform: rotate(210deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(11) { transform: rotate(270deg) translateX(1.7rem) translateY(-50%); }
+.dot-hex .dot-inner:nth-child(12) { transform: rotate(330deg) translateX(1.7rem) translateY(-50%); }
+
+.dot-hex .dot-center:nth-child(13) { transform: translate(-50%, -50%); }
+
+/* ===================================
+   ROW 3 - LINES
+   =================================== */
+
+/* Parallel horizontal lines (7 stacked) */
+.lines-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 10rem;
+}
+
+.lines-horizontal .line {
+    height: 0.125rem;
+    background-color: var(--secondary);
+    width: 100%;
+}
+
+/* Dotted divider */
+.asset-dotted-divider {
+    height: 0.125rem;
+    width: 15rem;
+    background-image: radial-gradient(circle, var(--accent-2) 50%, transparent 50%);
+    background-size: 0.5rem 0.125rem;
+    background-repeat: repeat-x;
+}
+
+/* Vertical dotted line */
+.line-vertical-dotted {
+    width: 0.125rem;
+    height: 10rem;
+    background-image: radial-gradient(circle, var(--accent-2) 50%, transparent 50%);
+    background-size: 0.125rem 0.5rem;
+    background-repeat: repeat-y;
+}
+
+/* Horizontal solid line */
+.line-horizontal-solid {
+    width: 15rem;
+    height: 0.125rem;
+    background-color: var(--secondary);
+}
+
+/* Diagonal line */
+.line-diagonal {
+    width: 10rem;
+    height: 0.125rem;
+    background-color: var(--secondary);
+    transform: rotate(-45deg);
+}
+
+/* ===================================
+   ROW 4 - RECTANGLES & BARS
+   =================================== */
+
+/* Rounded rectangle */
+.asset-rounded-rectangle {
+    width: 18rem;
+    height: 10rem;
+    background-color: var(--accent-1);
+    border-radius: 1.5rem;
+}
+
+/* Vertical rounded rectangle */
+.rect-vertical {
+    width: 6rem;
+    height: 15rem;
+    background-color: var(--secondary);
+    border-radius: 1.5rem;
+}
+
+/* Horizontal bar/pill shape */
+.pill-horizontal {
+    width: 18rem;
+    height: 4rem;
+    background-color: var(--primary);
+    border-radius: 2rem;
+}
+
+/* Square with rounded corners */
+.square-rounded {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--accent-2);
+    border-radius: 1.5rem;
+}
+
+/* ===================================
+   ROW 5 - PARTIAL SHAPES
+   =================================== */
+
+/* Large semicircle */
+.asset-semicircle {
+    background-color: var(--primary);
+    height: 20rem;
+    width: 40rem;
+    border-radius: 20rem 20rem 0 0;
+}
+
+/* Quarter circle */
+.asset-quarter-circle {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 12rem 0 0 0;
+    background-color: var(--accent-2);
+}
+
+/* Half circle left */
+.half-circle-left {
+    width: 7.5rem;
+    height: 15rem;
+    background-color: var(--primary);
+    border-radius: 15rem 0 0 15rem;
+}
+
+/* Half circle right */
+.half-circle-right {
+    width: 7.5rem;
+    height: 15rem;
+    background-color: var(--secondary);
+    border-radius: 0 15rem 15rem 0;
+}
+
+/* Three quarter circle */
+.three-quarter-circle {
+    width: 12rem;
+    height: 12rem;
+    background-color: var(--accent-1);
+    border-radius: 12rem 12rem 0 12rem;
+}
+
+/* Semicircle facing down */
+.semicircle-down {
+    width: 20rem;
+    height: 10rem;
+    background-color: var(--secondary);
+    border-radius: 0 0 10rem 10rem;
+}
+
+/* ===================================
+   ROW 6 - SEMICIRCLE VARIATIONS
+   =================================== */
+
+/* Semicircle with concentric lines */
+.semicircle-concentric {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 10rem 10rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: relative;
+}
+
+.semicircle-concentric-a {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 9rem 9rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+.semicircle-concentric-b {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 8rem 8rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+.semicircle-concentric-c {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 7rem 7rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+.semicircle-concentric-d {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 6rem 6rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+.semicircle-concentric-e {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 5rem 5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+/* Semicircle down with concentric lines */
+.semicircle-down-concentric {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 0 0 10rem 10rem;
+    border: 0.25rem solid var(--secondary);
+    border-top: none;
+    position: relative;
+}
+
+.semicircle-down-concentric-a {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 0 0 9rem 9rem;
+    border: 0.25rem solid var(--secondary);
+    border-top: none;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+.semicircle-down-concentric-b {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 0 0 8rem 8rem;
+    border: 0.25rem solid var(--secondary);
+    border-top: none;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+.semicircle-down-concentric-c {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 0 0 7rem 7rem;
+    border: 0.25rem solid var(--secondary);
+    border-top: none;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+.semicircle-down-concentric-d {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 0 0 6rem 6rem;
+    border: 0.25rem solid var(--secondary);
+    border-top: none;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+.semicircle-down-concentric-e {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 0 0 5rem 5rem;
+    border: 0.25rem solid var(--secondary);
+    border-top: none;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+/* Semicircle - filled with outline */
+.semicircle-filled-outline {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 10rem 10rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: relative;
+}
+
+.semicircle-filled-outline-inner {
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 0.75rem);
+    border-radius: 9.25rem 9.25rem 0 0;
+    background-color: var(--primary);
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    left: 0.75rem;
+}
+
+/* ===================================
+   ROW 7 - ARCH VARIATIONS
+   =================================== */
+
+/* Filled arch with outline */
+.arch-filled-outline {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+    position: relative;
+}
+
+.arch-filled-outline-inner {
+    width: calc(100% - 2rem);
+    height: calc(100% - 1rem);
+    border-radius: 6.5rem 6.5rem 0 0;
+    background-color: var(--primary);
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+
+/* Arch with extended legs */
+.arch-extended {
+    width: 15rem;
+    height: 25rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    border: 0.25rem solid var(--primary);
+    border-bottom: none;
+}
+
+/* Window shape (arch on rectangle) */
+.window-shape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.window-arch {
+    width: 10rem;
+    height: 5rem;
+    border-radius: 5rem 5rem 0 0;
+    background-color: var(--accent-1);
+}
+
+.window-base {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--accent-1);
+}
+
+
+
+
