@@ -69,7 +69,8 @@ function parseImageData(file) {
         name: file.name,
         format: format,
         title: title,
-        url: `https://lh3.googleusercontent.com/d/${file.id}`
+        url: `https://lh3.googleusercontent.com/d/${file.id}=w300-h300`,
+        urlFull: `https://lh3.googleusercontent.com/d/${file.id}`
     };
 }
 
@@ -87,7 +88,7 @@ function createGalleryItem(image) {
     img.alt = image.title;
     img.loading = 'lazy';
     
-    img.addEventListener('click', () => openLightbox(image.url, image.title));
+    img.addEventListener('click', () => openLightbox(image.urlFull, image.title));
     
     item.appendChild(img);
     return item;
