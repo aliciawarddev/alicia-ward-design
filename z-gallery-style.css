@@ -1,0 +1,145 @@
+/* ===================================
+   BASE STYLES
+   =================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F7F3ED;
+    color: #1A1A1A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+
+.header {
+    text-align: center;
+    padding: 3rem 1.5rem 2rem;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #746D68;
+    font-size: 1rem;
+}
+
+/* ===================================
+   MAIN CONTENT
+   =================================== */
+
+.main {
+    flex: 1;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    width: 100%;
+}
+
+/* ===================================
+   FILTERS
+   =================================== */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid #7A8B6F;
+    color: #7A8B6F;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    background: rgba(122, 139, 111, 0.1);
+}
+
+.filter-btn.active {
+    background: #C8685E;
+    border-color: #C8685E;
+    color: #fff;
+}
+
+/* ===================================
+   LOADING & ERROR STATES
+   =================================== */
+
+.loading,
+.error {
+    text-align: center;
+    padding: 3rem;
+    color: #746D68;
+}
+
+.error {
+    color: #C8685E;
+    display: none;
+}
+
+/* ===================================
+   GALLERY GRID
+   =================================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.02);
+}
+
+.gallery-item.hidden {
+    display: none;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: #746D68;
+    font-size: 0.875rem;
+}

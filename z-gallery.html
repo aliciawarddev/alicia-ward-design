@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia Ward Design | Gallery</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="gallery-style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Alicia Ward</h1>
+        <p class="subtitle">Digital Art Gallery</p>
+    </header>
+
+    <main class="main">
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="square">Square</button>
+            <button class="filter-btn" data-filter="landscape">Landscape</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading">Loading gallery...</div>
+
+        <!-- Error State -->
+        <div class="error" id="error"></div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery" id="gallery"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Alicia Ward Design</p>
+    </footer>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html>
