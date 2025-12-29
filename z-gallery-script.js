@@ -4,7 +4,6 @@
 
 const CONFIG = {
     API_KEY: 'AIzaSyA2393l0wXeQsb4zeo129uynW3TMnH0ZAA',
-
     FOLDER_ID: '1alCqX_5PHK1Go3ZSQknL-yR-TxwVXOF2'
 };
 
@@ -16,6 +15,9 @@ const gallery = document.getElementById('gallery');
 const loading = document.getElementById('loading');
 const error = document.getElementById('error');
 const filterButtons = document.querySelectorAll('.filter-btn');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox.querySelector('img');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
 
 // Store all images for filtering
 let allImages = [];
@@ -67,7 +69,7 @@ function parseImageData(file) {
         name: file.name,
         format: format,
         title: title,
-        url: `https://lh3.googleusercontent.com/d/${file.id}`  // changed: use lh3 thumbnail URL
+        url: `https://lh3.googleusercontent.com/d/${file.id}`
     };
 }
 
@@ -75,7 +77,23 @@ function parseImageData(file) {
 // GALLERY RENDERING
 // ===================================
 
-function renderGallery(images) {
+function createGalleryItem(image) {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.dataset.format = image.format;
+    
+    const img = document.createElement('img');
+    img.src = image.url;
+    img.alt = image.title;
+    img.loading = 'lazy';
+    
+    img.addEventListener('click', () => openLightbox(image.url, image.title));
+    
+    item.appendChild(img);
+    return item;
+}
+
+function renderGallery(images, filter = 'all') {
     gallery.innerHTML = '';
     
     if (images.length === 0) {
@@ -83,32 +101,79 @@ function renderGallery(images) {
         return;
     }
     
-    images.forEach(image => {
-        const item = document.createElement('div');
-        item.className = 'gallery-item';
-        item.dataset.format = image.format;
+    if (filter === 'all') {
+        const formats = ['square', 'landscape', 'portrait'];
+        const formatLabels = { square: 'Square', landscape: 'Landscape', portrait: 'Portrait' };
         
-        const img = document.createElement('img');
-        img.src = image.url;
-        img.alt = image.title;
-        img.loading = 'lazy'; // Native lazy loading
+        formats.forEach(format => {
+            const formatImages = images.filter(img => img.format === format);
+            if (formatImages.length === 0) return;
+            
+            const section = document.createElement('section');
+            section.className = 'gallery-section';
+            section.dataset.format = format;
+            
+            const heading = document.createElement('h2');
+            heading.className = 'gallery-section-heading';
+            heading.textContent = formatLabels[format];
+            section.appendChild(heading);
+            
+            const grid = document.createElement('div');
+            grid.className = 'gallery-grid';
+            grid.dataset.format = format;
+            
+            formatImages.forEach(image => {
+                grid.appendChild(createGalleryItem(image));
+            });
+            
+            section.appendChild(grid);
+            gallery.appendChild(section);
+        });
+    } else {
+        const grid = document.createElement('div');
+        grid.className = 'gallery-grid';
+        grid.dataset.format = filter;
         
-        item.appendChild(img);
-        gallery.appendChild(item);
-    });
+        images.forEach(image => {
+            grid.appendChild(createGalleryItem(image));
+        });
+        
+        gallery.appendChild(grid);
+    }
 }
 
 function filterGallery(format) {
-    const items = document.querySelectorAll('.gallery-item');
-    
-    items.forEach(item => {
-        if (format === 'all' || item.dataset.format === format) {
-            item.classList.remove('hidden');
-        } else {
-            item.classList.add('hidden');
-        }
-    });
+    const visibleImages = format === 'all' 
+        ? allImages 
+        : allImages.filter(img => img.format === format);
+    renderGallery(visibleImages, format);
 }
+
+// ===================================
+// LIGHTBOX
+// ===================================
+
+function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
 
 // ===================================
 // EVENT LISTENERS
@@ -116,11 +181,9 @@ function filterGallery(format) {
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Update active state
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
         
-        // Apply filter
         const filter = button.dataset.filter;
         filterGallery(filter);
     });
@@ -131,7 +194,6 @@ filterButtons.forEach(button => {
 // ===================================
 
 async function init() {
-    // Check if API key is configured
     if (CONFIG.API_KEY === 'YOUR_API_KEY_HERE' || CONFIG.FOLDER_ID === 'YOUR_FOLDER_ID_HERE') {
         loading.style.display = 'none';
         error.style.display = 'block';
