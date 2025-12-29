@@ -3,12 +3,9 @@
 // ===================================
 
 const CONFIG = {
-    // Replace with your Google Drive API key
-    API_KEY: 'YOUR_API_KEY_HERE',
-    
-    // Replace with your Google Drive folder ID
-    // (the string of characters after /folders/ in the Drive URL)
-    FOLDER_ID: 'YOUR_FOLDER_ID_HERE'
+    API_KEY: 'AIzaSyA2393l0wXeQsb4zeo129uynW3TMnH0ZAA',
+
+    FOLDER_ID: '1alCqX_5PHK1Go3ZSQknL-yR-TxwVXOF2'
 };
 
 // ===================================
@@ -51,11 +48,9 @@ async function fetchImagesFromDrive() {
 // ===================================
 
 function parseImageData(file) {
-    // Expected naming: format_title.ext (e.g., landscape_sunset-mountains.jpg)
     const nameWithoutExt = file.name.replace(/\.[^/.]+$/, '');
     const parts = nameWithoutExt.split('_');
     
-    // Default to square if no valid prefix
     let format = 'square';
     let title = nameWithoutExt;
     
@@ -72,8 +67,7 @@ function parseImageData(file) {
         name: file.name,
         format: format,
         title: title,
-        // Direct image URL from Google Drive
-        url: `https://drive.google.com/uc?export=view&id=${file.id}`
+        url: `https://lh3.googleusercontent.com/d/${file.id}`  // changed: use lh3 thumbnail URL
     };
 }
 
