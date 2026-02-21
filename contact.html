@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Alicia Ward Design</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230a0a0a'/><text x='50' y='56' font-family='serif' font-size='42' font-weight='bold' fill='%23f5f5f0' text-anchor='middle' dominant-baseline='middle'>AW</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">Alicia Ward Design</a>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="https://www.etsy.com/shop/AliciaWardDesign" target="_blank" rel="noopener">Etsy</a></li>
+            <li><a href="https://www.redbubble.com/people/AliciaWardDesign" target="_blank" rel="noopener">Redbubble</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-page">
+
+        <section class="about-hero">
+            <h1>Contact</h1>
+            <p class="contact-subtitle">For commissions, collaborations, or just to say hello.</p>
+        </section>
+
+        <section class="about-section">
+            <form class="contact-form" action="https://formsubmit.co/aliciawarddesign@gmail.com" method="POST">
+                <!-- FormSubmit config -->
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="_subject" required>
+                        <option value="" disabled selected>Select a topic</option>
+                        <option value="Custom Commission">Custom Commission</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Wholesale / Licensing">Wholesale / Licensing</option>
+                        <option value="Order Question">Question About an Order</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-brand">Alicia Ward Design</p>
+            <div class="footer-links">
+                <a href="https://www.etsy.com/shop/AliciaWardDesign" target="_blank" rel="noopener">Etsy</a>
+                <a href="https://www.redbubble.com/people/AliciaWardDesign" target="_blank" rel="noopener">Redbubble</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Alicia Ward Design. Calgary, Alberta.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

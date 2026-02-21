@@ -329,6 +329,7 @@ a {
     margin-bottom: 1.5rem;
 }
 
+/* Bio block - text only */
 .about-section p {
     font-weight: 300;
     line-height: 1.7;
@@ -340,7 +341,13 @@ a {
     margin-bottom: 0;
 }
 
-/* Dark section variant */
+/* Contact page */
+.contact-subtitle {
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
 .about-section--dark {
     background: var(--black);
     color: var(--white);
@@ -352,33 +359,6 @@ a {
     max-width: var(--max-width);
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Bio block with image */
-.about-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-}
-
-.about-image img {
-    border-radius: 6px;
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .about-block {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .about-image {
-        order: -1;
-        max-width: 400px;
-    }
 }
 
 /* Process grid */
@@ -464,36 +444,128 @@ a {
     color: var(--gray);
 }
 
-/* Contact */
-.contact-text {
-    max-width: 640px;
-    margin: 0 auto 1.5rem;
-}
-
-.contact-text a {
-    border-bottom: 1px solid rgba(255,255,255,0.4);
-}
-
-.contact-text a:hover {
-    border-color: var(--white);
-}
-
-.contact-links {
-    display: flex;
-    gap: 1.5rem;
+/* Collections grid */
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-.contact-links a {
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    padding-bottom: 2px;
+.collection-block h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
-.contact-links a:hover {
-    border-color: var(--white);
+.collection-block p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    max-width: 100%;
+}
+
+.collection-block--upcoming {
+    opacity: 0.6;
+    border-left: 2px solid rgba(255,255,255,0.2);
+    padding-left: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact form */
+.contact-intro {
+    font-weight: 300;
+    max-width: 640px;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 640px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.7rem 0.85rem;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    border: 1.5px solid var(--gray-light);
+    border-radius: 4px;
+    background: var(--white);
+    color: var(--black);
+    transition: border-color 0.2s;
+    appearance: none;
+}
+
+.form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.85rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--black);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: var(--black);
+    color: var(--white);
+    border: 1.5px solid var(--black);
+    padding: 0.7rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.form-submit:hover {
+    background: transparent;
+    color: var(--black);
 }
 
 /* ===================================
