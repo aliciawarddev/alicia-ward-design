@@ -68,7 +68,7 @@ a {
 }
 
 .nav-logo img {
-  height: 60px; /* adjust to fit your nav */
+  height: 80px; /* adjust to fit your nav */
   width: auto;
 }
 
@@ -124,38 +124,6 @@ a {
     width: 100%;
 }
 
-/* Mobile nav */
-@media (max-width: 640px) {
-    .nav-toggle {
-        display: block;
-        z-index: 11;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        background: var(--white);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2.5rem;
-        z-index: 10;
-        transform: translateX(100%);
-        transition: transform 0.35s ease;
-    }
-
-    .nav-links.open {
-        transform: translateX(0);
-    }
-
-    .nav-links a {
-        font-size: 1.5rem;
-    }
-}
-
 /* ===================================
    HERO
    =================================== */
@@ -179,8 +147,18 @@ a {
 .hero p {
     color: var(--gray);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 0.01em;
+    padding-top: 2rem;
+}
+
+.hero-logo {
+  max-width: 1200px; /* adjust as needed */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 43%;
+
 }
 
 /* ===================================
