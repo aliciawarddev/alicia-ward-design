@@ -67,6 +67,11 @@ a {
     letter-spacing: -0.02em;
 }
 
+.nav-logo img {
+  height: 60px; /* adjust to fit your nav */
+  width: auto;
+}
+
 .nav-toggle {
     display: none;
     background: none;
