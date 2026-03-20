@@ -59,6 +59,7 @@ a {
     max-width: var(--max-width);
     margin: 0 auto;
     width: 100%;
+    position: relative;
 }
 
 .nav-logo {
@@ -68,8 +69,8 @@ a {
 }
 
 .nav-logo img {
-  height: 80px; /* adjust to fit your nav */
-  width: auto;
+    height: 70px;
+    width: auto;
 }
 
 .nav-toggle {
@@ -153,132 +154,104 @@ a {
 }
 
 .hero-logo {
-  max-width: 1200px; /* adjust as needed */
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center 43%;
-
-}
-
-/* ===================================
-   FILTERS
-   =================================== */
-
-.filters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0 var(--gutter) 2.5rem;
-    max-width: var(--max-width);
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
-.filter-btn {
-    background: transparent;
-    border: 1.5px solid var(--gray-light);
-    color: var(--gray);
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    font-weight: 400;
-    padding: 0.5rem 1.25rem;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-}
-
-.filter-btn:hover {
-    border-color: var(--black);
-    color: var(--black);
-}
-
-.filter-btn.active {
-    background: var(--black);
-    border-color: var(--black);
-    color: var(--white);
-}
-
 /* ===================================
-   GALLERY GRID
+   COLLECTIONS GRID (index page)
    =================================== */
 
-.gallery {
+.collections {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem var(--gutter) 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1.5rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 var(--gutter) 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
 }
 
 /* ===================================
-   CARD
+   COLLECTION CARD
    =================================== */
 
-.card {
+.collection-card {
+    border: 1px solid var(--gray-light);
+    padding: 1.75rem;
     display: flex;
     flex-direction: column;
-    transition: opacity 0.3s ease;
+    gap: 1.25rem;
+    transition: border-color 0.2s;
 }
 
-.card.hidden {
-    display: none;
+.collection-card h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    text-align: center;
 }
 
-.card-img {
-    aspect-ratio: 1 / 1;
+/* ===================================
+   COLLECTION THUMBNAILS
+   =================================== */
+
+.collection-thumbs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.collection-thumb {
+    aspect-ratio: 1;
     overflow: hidden;
     background: var(--black);
     border-radius: 6px;
 }
 
-.card-img img {
+.collection-thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 
-.card:hover .card-img img {
-    transform: scale(1.03);
-}
-
-.card-info {
-    padding: 0.75rem 0;
-}
-
-.card-info h3 {
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin-bottom: 0.2rem;
-}
-
-.card-collection {
-    display: inline-block;
-    font-size: 0.8rem;
-    color: var(--gray);
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-}
-
-.card-links {
+/* Placeholder for collections without images yet */
+.collection-placeholder {
+    grid-column: 1 / -1;
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 2 / 1;
+    background: var(--gray-light);
+    color: var(--gray);
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    border-radius: 6px;
 }
 
-.card-links a {
-    font-size: 0.8rem;
+/* ===================================
+   COLLECTION SHOP LINKS
+   =================================== */
+
+.collection-links {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection-links a {
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid var(--gray-light);
-    padding-bottom: 1px;
-    transition: border-color 0.2s;
-}
-
-.card-links a:hover {
-    border-color: var(--black);
+    padding: 0.6rem 1.5rem;
+    border: 1.5px solid var(--black);
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
 }
 
 /* ===================================
@@ -312,7 +285,6 @@ a {
     margin-bottom: 1.5rem;
 }
 
-/* Bio block - text only */
 .about-section p {
     font-weight: 300;
     line-height: 1.7;
@@ -324,13 +296,7 @@ a {
     margin-bottom: 0;
 }
 
-/* Contact page */
-.contact-subtitle {
-    color: var(--gray);
-    font-size: 1rem;
-    font-weight: 300;
-    margin-top: 0.5rem;
-}
+/* About page - dark section */
 .about-section--dark {
     background: var(--black);
     color: var(--white);
@@ -379,10 +345,34 @@ a {
     max-width: 100%;
 }
 
-@media (max-width: 768px) {
-    .process-grid {
-        grid-template-columns: 1fr;
-    }
+/* Collections grid (about page) */
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.collection-block h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.collection-block p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    max-width: 100%;
+}
+
+.collection-block--upcoming {
+    opacity: 0.6;
+    border-left: 2px solid rgba(255,255,255,0.2);
+    padding-left: 1.5rem;
 }
 
 /* FAQ */
@@ -427,43 +417,17 @@ a {
     color: var(--gray);
 }
 
-/* Collections grid */
-.collections-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
+/* ===================================
+   CONTACT PAGE
+   =================================== */
 
-.collection-block h3 {
-    font-family: var(--font-display);
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-}
-
-.collection-block p {
+.contact-subtitle {
+    color: var(--gray);
+    font-size: 1rem;
     font-weight: 300;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    opacity: 0.85;
-    max-width: 100%;
+    margin-top: 0.5rem;
 }
 
-.collection-block--upcoming {
-    opacity: 0.6;
-    border-left: 2px solid rgba(255,255,255,0.2);
-    padding-left: 1.5rem;
-}
-
-@media (max-width: 640px) {
-    .collections-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Contact form */
 .contact-intro {
     font-weight: 300;
     max-width: 640px;
@@ -479,12 +443,6 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
-}
-
-@media (max-width: 480px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
 }
 
 .form-group {
@@ -599,6 +557,6 @@ a {
 }
 
 .footer-logo {
-  height: 60px; /* adjust as needed */
-  width: auto;
+    height: 70px;
+    width: auto;
 }
